@@ -114,7 +114,7 @@ CREATE TABLE people (
 
 CREATE TABLE roles (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    actor_id INTEGER
+    role_description TEXT
 );
 
 CREATE TABLE directors (
