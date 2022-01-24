@@ -117,8 +117,14 @@ CREATE TABLE roles (
     actor_id INTEGER
 );
 
+CREATE TABLE directors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    director_id INTEGER
+);
+
 CREATE TABLE casts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     role_id INTEGER,
     movie_id INTEGER
+    director_id INTEGER
 )
