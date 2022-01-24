@@ -97,28 +97,28 @@
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS people;
 DROP TABLE IF EXISTS roles;
-DROP TABLE IF EXISTS cast;
+DROP TABLE IF EXISTS casts;
 
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   movie_name TEXT,
   year_of_release TEXT,
   APAA_rating TEXT,
-  movie_director_id INTEGER,
+  movie_director_id INTEGER
 );
 
 CREATE TABLE people (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  persons_name TEXT,
+  persons_name TEXT
 );
 
 CREATE TABLE roles (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    actor_id INTEGER,
-)
+    actor_id INTEGER
+);
 
 CREATE TABLE casts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     role_id INTEGER,
-    movie_id INTEGER,
+    movie_id INTEGER
 )
