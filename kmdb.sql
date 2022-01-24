@@ -117,10 +117,6 @@ CREATE TABLE roles (
     role_description TEXT
 );
 
-CREATE TABLE directors (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    director_id INTEGER
-);
 
 CREATE TABLE casts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
