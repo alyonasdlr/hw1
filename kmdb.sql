@@ -111,9 +111,13 @@ CREATE TABLE people (
   persons_name TEXT,
 );
 
+CREATE TABLE roles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    actor_id INTEGER,
+)
+
 CREATE TABLE casts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    role_name TEXT,
-    actor_id INTEGER,
+    role_id INTEGER,
     movie_id INTEGER,
 )
