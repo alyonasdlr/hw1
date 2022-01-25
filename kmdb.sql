@@ -123,4 +123,54 @@ CREATE TABLE casts (
     role_id INTEGER,
     movie_id INTEGER
     director_id INTEGER
+);
+
+INSERT INTO people (
+  persons_name
 )
+VALUES (
+  "Christopher Nolan"
+);
+
+SELECT * FROM people; 
+
+INSERT INTO movies (
+  movie_name,
+  year_of_release,
+  APAA_rating,
+  movie_director_id
+)
+VALUES (
+  "Batman Begins",
+  "2005",
+  "PG-13",
+  1
+);
+
+INSERT INTO movies (
+  movie_name,
+  year_of_release,
+  APAA_rating,
+  movie_director_id
+)
+VALUES (
+  "The Dark Knight",
+  "2008",
+  "PG-13",
+  1
+);
+
+INSERT INTO movies (
+  movie_name,
+  year_of_release,
+  APAA_rating,
+  movie_director_id
+)
+VALUES (
+  "The Dark Knight Rises",
+  "2013",
+  "PG-13",
+  1
+);
+
+SELECT * FROM movies; 
