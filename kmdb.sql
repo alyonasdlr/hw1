@@ -343,10 +343,13 @@ VALUES (
 
 Select * FROM casts;
 
-SELECT movies.movie_name, roles.role_description, people.persons_name
-FROM roles
-INNER JOIN movies ON 
 
+
+ SELECT movies.movie_name, roles.role_description, people.persons_name
+ FROM casts
+ INNER JOIN movies ON movies.id = casts.movie_id
+ INNER JOIN roles ON roles.id = casts.role_id
+ INNER JOIN people ON people.id = casts.played_by;
 
 SELECT movies.movie_name, movies.year_of_release, movies.APAA_rating, people.persons_name
 FROM people
