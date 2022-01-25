@@ -250,4 +250,6 @@ VALUES (
   1
 );
 
-SELECT * FROM movies; 
+SELECT movies.movie_name, movies.year_of_release, movies.APAA_rating, people.persons_name
+FROM people
+INNER JOIN movies ON people.id = movies.movie_director_id;
