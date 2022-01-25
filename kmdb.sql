@@ -77,18 +77,13 @@
 -- TODO!
 
 -- Prints a header for the movies output
-.print "Movies"
-.print "======"
-.print ""
+
 
 -- The SQL statement for the movies output
 -- TODO!
 
 -- Prints a header for the cast output
-.print ""
-.print "Top Cast"
-.print "========"
-.print ""
+
 
 
 -- The SQL statement for the cast output
@@ -478,12 +473,21 @@ VALUES (
   12
 );
 
- SELECT movies.movie_name, roles.role_description, people.persons_name
+
+.print ""
+.print "Movies"
+SELECT movies.movie_name, movies.year_of_release, movies.APAA_rating, people.persons_name
+FROM people
+INNER JOIN movies ON people.id = movies.movie_director_id;
+.print "======"
+
+
+.print ""
+.print "Top Cast"
+ SELECT movies.movie_name, people.persons_name, roles.role_description
  FROM casts
  INNER JOIN movies ON movies.id = casts.movie_id
  INNER JOIN roles ON roles.id = casts.role_id
  INNER JOIN people ON people.id = casts.played_by;
-
-SELECT movies.movie_name, movies.year_of_release, movies.APAA_rating, people.persons_name
-FROM people
-INNER JOIN movies ON people.id = movies.movie_director_id;
+.print "========"
+.print ""
