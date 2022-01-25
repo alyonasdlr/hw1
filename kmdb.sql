@@ -121,8 +121,8 @@ CREATE TABLE roles (
 CREATE TABLE casts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     role_id INTEGER,
-    movie_id INTEGER
-    director_id INTEGER
+    movie_id INTEGER,
+    played_by INTEGER
 );
 
 INSERT INTO people (
@@ -289,6 +289,7 @@ VALUES (
 );
 
 SELECT * FROM people; 
+SELECT * FROM roles;
 
 INSERT INTO movies (
   movie_name,
@@ -329,6 +330,18 @@ VALUES (
   1
 );
 
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  1,
+  1,
+  1
+);
+
+Select * FROM casts;
 SELECT movies.movie_name, movies.year_of_release, movies.APAA_rating, people.persons_name
 FROM people
 INNER JOIN movies ON people.id = movies.movie_director_id;
