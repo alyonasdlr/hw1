@@ -132,6 +132,83 @@ VALUES (
   "Christopher Nolan"
 );
 
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Christian Bale"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Michail Caine"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Liam Neeson"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Katie Homes"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Gary Oldman"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Heath Ledger"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Aaron Ekhart"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Maggie Gyllenhaal"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Tom Hardy"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Joseph Gordon-Lewitt"
+);
+
+INSERT INTO people (
+  persons_name
+)
+VALUES (
+  "Anne Hathaway"
+);
+
 SELECT * FROM people; 
 
 INSERT INTO movies (
