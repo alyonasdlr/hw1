@@ -132,11 +132,20 @@ VALUES (
   "Christopher Nolan"
 );
 
+
+
 INSERT INTO people (
   persons_name
 )
 VALUES (
   "Christian Bale"
+);
+
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Bruce Wayne"
 );
 
 INSERT INTO people (
@@ -146,11 +155,25 @@ VALUES (
   "Michail Caine"
 );
 
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Alfred"
+);
+
 INSERT INTO people (
   persons_name
 )
 VALUES (
   "Liam Neeson"
+);
+
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Ra's Al Ghul"
 );
 
 INSERT INTO people (
@@ -160,11 +183,25 @@ VALUES (
   "Katie Homes"
 );
 
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Rachel Dawes"
+);
+
 INSERT INTO people (
   persons_name
 )
 VALUES (
   "Gary Oldman"
+);
+
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Commissioner Gordon"
 );
 
 INSERT INTO people (
@@ -174,11 +211,25 @@ VALUES (
   "Heath Ledger"
 );
 
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Joker"
+);
+
 INSERT INTO people (
   persons_name
 )
 VALUES (
   "Aaron Ekhart"
+);
+
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Harvey Dent"
 );
 
 INSERT INTO people (
@@ -188,11 +239,25 @@ VALUES (
   "Maggie Gyllenhaal"
 );
 
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Rachel Dawes"
+);
+
 INSERT INTO people (
   persons_name
 )
 VALUES (
   "Tom Hardy"
+);
+
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Bane"
 );
 
 INSERT INTO people (
@@ -202,11 +267,25 @@ VALUES (
   "Joseph Gordon-Lewitt"
 );
 
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "John Blake"
+);
+
 INSERT INTO people (
   persons_name
 )
 VALUES (
   "Anne Hathaway"
+);
+
+INSERT INTO roles (
+  role_description
+)
+VALUES (
+  "Selina Kyle"
 );
 
 SELECT * FROM people; 
