@@ -239,12 +239,6 @@ VALUES (
   "Maggie Gyllenhaal"
 );
 
-INSERT INTO roles (
-  role_description
-)
-VALUES (
-  "Rachel Dawes"
-);
 
 INSERT INTO people (
   persons_name
@@ -288,8 +282,6 @@ VALUES (
   "Selina Kyle"
 );
 
-SELECT * FROM people; 
-SELECT * FROM roles;
 
 INSERT INTO movies (
   movie_name,
@@ -338,12 +330,153 @@ INSERT INTO casts (
 VALUES (
   1,
   1,
-  1
+  2
 );
 
-Select * FROM casts;
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  1,
+  2,
+  3
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  1,
+  3,
+  4
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  1,
+  4,
+  5
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  1,
+  5,
+  6
+);
 
 
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  2,
+  1,
+  2
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  2,
+  6,
+  7
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  2,
+  7,
+  8
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  2,
+  4,
+  9
+);
+
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  3,
+  1,
+  2
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  3,
+  5,
+  6
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  3,
+  8,
+  10
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  3,
+  9,
+  11
+);
+
+INSERT INTO casts (
+    movie_id,
+    role_id,
+    played_by
+)
+VALUES (
+  3,
+  10,
+  12
+);
 
  SELECT movies.movie_name, roles.role_description, people.persons_name
  FROM casts
