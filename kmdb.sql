@@ -342,6 +342,12 @@ VALUES (
 );
 
 Select * FROM casts;
+
+SELECT movies.movie_name, roles.role_description, people.persons_name
+FROM roles
+INNER JOIN movies ON 
+
+
 SELECT movies.movie_name, movies.year_of_release, movies.APAA_rating, people.persons_name
 FROM people
 INNER JOIN movies ON people.id = movies.movie_director_id;
